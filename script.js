@@ -20,8 +20,7 @@ function closeevery(){
 }
 btn.addEventListener(`click`,()=>{
     openevery()
-    const mytimeout = setTimeout(closeevery,7000)
-    return mytimeout
+    setTimeout(closeevery,7000)
 })
 
 closebtn.addEventListener('click',()=>{
