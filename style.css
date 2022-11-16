@@ -61,6 +61,7 @@ body{
 .oppen{
     top: -50%;
     transform: translate(-5%,-500%);
+    left: 35%;
 }
 .close{
     top: 100px;

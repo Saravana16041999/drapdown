@@ -20,10 +20,19 @@ function closeevery(){
 }
 btn.addEventListener(`click`,()=>{
     openevery()
+    const mytimeout = setTimeout(closeevery,7000)
+    return mytimeout
 })
 
 closebtn.addEventListener('click',()=>{
     closeevery()
+})
+
+document.addEventListener(`click`,(e)=>{
+    let newclose = e.target.classList.contains('overlay_one')
+        if(newclose){
+            closeevery()
+        }
 })
 
 
